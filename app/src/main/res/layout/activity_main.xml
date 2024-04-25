@@ -21,15 +21,15 @@
         app:layout_constraintTop_toBottomOf="@+id/ivPentagon" />
 
     <TextView
-        android:id="@+id/tvTitle"
+        android:id="@+id/tvTitlevmain"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
-        android:contentDescription="@string/tvTitle"
-        android:text="@string/tvTitle"
+        android:contentDescription="@string/tvTitlevmain"
+        android:text="@string/tvTitlevmain"
         android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.609"
+        app:layout_constraintHorizontal_bias="0.592"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -43,7 +43,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitlevmain"
         app:srcCompat="@drawable/triangulo"
         android:onClick="imageClicked"
         android:focusable="true" />
@@ -73,7 +73,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTriangle"
-        app:srcCompat="@drawable/pentagono" />
+        app:srcCompat="@drawable/pentagono"
+        android:clickable="true"
+        android:onClick="imageClicked"
+        android:focusable="true" />
 
     <TextView
         android:id="@+id/tvOval"

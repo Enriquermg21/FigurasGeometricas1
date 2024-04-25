@@ -3,7 +3,7 @@
     <string name="imgTriangle">imgTriangle</string>
     <string name="imgPentagon">imgPentagon</string>
     <string name="imgOval">imgOval</string>
-    <string name="tvTitle">Elige una figura para conocer su Área</string>
+    <string name="tvTitlevmain">Elige una figura para calcular su Área</string>
     <string name="tvTriangle">Triángulo</string>
     <string name="tvPentagon">Pentagono</string>
     <string name="tvOval">Ovalo</string>
