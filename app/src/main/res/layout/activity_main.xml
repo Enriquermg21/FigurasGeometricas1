@@ -5,83 +5,93 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvPentagon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:contentDescription="@string/tvPentagon"
         android:text="@string/tvPentagon"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/ivPentagon" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="64dp"
         android:contentDescription="@string/tvTitle"
         android:text="@string/tvTitle"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/ivTriangle"
         android:layout_width="147dp"
         android:layout_height="106dp"
-        android:layout_marginTop="72dp"
+        android:layout_marginTop="36dp"
+        android:background="#FFFFFF"
         android:contentDescription="@string/imgTriangle"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
         app:srcCompat="@drawable/triangulo" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/ivOval"
         android:layout_width="112dp"
         android:layout_height="108dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="36dp"
         android:contentDescription="@string/imgOval"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintTop_toBottomOf="@+id/tvPentagon"
         app:srcCompat="@drawable/ovalo" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/ivPentagon"
         android:layout_width="145dp"
         android:layout_height="113dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="28dp"
+        android:background="#FFFFFF"
         android:contentDescription="@string/imgPentagon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/tvTriangle"
         app:srcCompat="@drawable/pentagono" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tvOval"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/tvOval"
         android:text="@string/tvOval"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3"
-        app:layout_constraintVertical_bias="0.308" />
+        app:layout_constraintTop_toBottomOf="@+id/ivOval"
+        app:layout_constraintVertical_bias="0.203" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvTriangle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:contentDescription="@string/tvTitle"
         android:text="@string/tvTriangle"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/ivTriangle" />
 </androidx.constraintlayout.widget.ConstraintLayout>
