@@ -20,3 +20,5 @@ o
 ?app/src/main/java/com/example/geometricfigures/mainViewModel.kt,d\b\db7945b3c6b07aae884a24b31c4391ed62b03989
 n
 >app/src/main/java/com/example/geometricfigures/AreaActivity.kt,a\1\a1f906d69897a28b732194ba8fee869e6fe89686
+P
+ app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e

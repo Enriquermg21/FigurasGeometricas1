@@ -9,7 +9,6 @@ import androidx.lifecycle.ViewModelProvider
 
 class AreaActivity : AppCompatActivity() {
 
-    private lateinit var mainViewModel: mainViewModel
     private lateinit var areaViewModel: AreaViewModel
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,7 +19,7 @@ class AreaActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        mainViewModel = ViewModelProvider(this).get(mainViewModel::class.java)
-        areaViewModel = ViewModelProvider(this).get(areaViewModel::class.java)
+        areaViewModel = ViewModelProvider(this).get(AreaViewModel::class.java)
     }
+
 }
