@@ -16,3 +16,7 @@ k
 ;app/src/main/java/com/example/geometricfigures/ViewModel.kt,8\7\8718f0c23b967d94cf17e5903d67a3ca40cf966b
 o
 ?app/src/main/java/com/example/geometricfigures/AreaViewModel.kt,7\d\7d2f62b5de567965bc51507cd3892c04808038c2
+o
+?app/src/main/java/com/example/geometricfigures/mainViewModel.kt,d\b\db7945b3c6b07aae884a24b31c4391ed62b03989
+n
+>app/src/main/java/com/example/geometricfigures/AreaActivity.kt,a\1\a1f906d69897a28b732194ba8fee869e6fe89686
