@@ -12,8 +12,6 @@ S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 D
 app/build.gradle.kts,d\2\d2a4383452aad84a18429a5844d31330a012a9e6
-k
-;app/src/main/java/com/example/geometricfigures/ViewModel.kt,8\7\8718f0c23b967d94cf17e5903d67a3ca40cf966b
 o
 ?app/src/main/java/com/example/geometricfigures/AreaViewModel.kt,7\d\7d2f62b5de567965bc51507cd3892c04808038c2
 o
@@ -22,3 +20,5 @@ n
 >app/src/main/java/com/example/geometricfigures/AreaActivity.kt,a\1\a1f906d69897a28b732194ba8fee869e6fe89686
 P
  app/src/main/AndroidManifest.xml,8\c\8c55c3ccc257e5907959013f99656e4c8ec3903e
+o
+?app/src/main/java/com/example/geometricfigures/MainViewModel.kt,6\5\651020ad572c26738e92c3e9cca6807075262939

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FigurasGeométricas</string>
+    <string name="tvTitlevMain">Choose a figure to calculate its Area</string>
+    <string name="tvTriangle">Triangle</string>
+    <string name="tvPentagon">Pentagon</string>
+    <string name="tvOval">Oval</string>
+    <string name="tvCalculateArea">To calculate the area of ​​the triangle you just have to multiply the base by the height.</string>
+    <string name="tvComponentBase">" Enter the Base"</string>
+    <string name="tvComponentHeight">Enter the Height</string>
+    <string name="tvTitlevArea">How to calculate the area of ​​the triangle?</string>
+</resources>

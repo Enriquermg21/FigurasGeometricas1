@@ -19,7 +19,7 @@ class AreaActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        areaViewModel = ViewModelProvider(this).get(AreaViewModel::class.java)
+        areaViewModel = ViewModelProvider(this)[AreaViewModel::class.java]
     }
 
 }
