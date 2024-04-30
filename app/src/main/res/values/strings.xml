@@ -9,7 +9,7 @@
     <string name="tvOval">Ovalo</string>
     <string name="tvTitlevArea">¿Cómo calcular el área del triángulo?</string>
     <string name="imgvArea" translatable="false"></string>
-    <string name="tvCalculateArea">Calcular el area del triangulo: b=base * h=altura</string>
+    <string name="tvCalculateArea">Calcular el area del triangulo: b=base  *  h=altura</string>
     <string name="tvComponentBase">Introduce la Base</string>
     <string name="tvComponentHeight">Introduce la Altura</string>
     <string name="ptBaseUser" translatable="false"></string>
