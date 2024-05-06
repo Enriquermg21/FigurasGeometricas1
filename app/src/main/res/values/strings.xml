@@ -16,11 +16,13 @@
     <string name="tvComponentHeight">Introduce la Altura</string>
     <string name="ptBaseUser" translatable="false"></string>
     <string name="ptHeightUser" translatable="false"></string>
-    <string name="ptBaseUserHint" translatable="false">Base</string>
-    <string name="ptHeightUserHint" translatable="false">Altura</string>
+    <string name="ptBaseUserHint" translatable="false"> .</string>
+    <string name="ptHeightUserHint" translatable="false"> .</string>
     <string name="tvCalculateAreaPentagono">Calcular el area del pentagono: 1/4 * √5 * (5+2*√5) x lado^2 </string>
     <string name="tvCalculateAreaOvalo">Calcular el area del ovalo: π * a * b</string>
     <string name="tvheightpentagono">Introduce el tamaño del lado</string>
     <string name="tvheightovalo">Introduce el tamaño de la diagonal mayor</string>
     <string name="tvbaseOvalo">Introduce el tamaño de la diagonal menor</string>
+    <string name="btCalculararea">Calcular area</string>
+    <string name="tvresult" translatable="false"></string>
 </resources>

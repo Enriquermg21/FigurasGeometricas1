@@ -1,8 +1,10 @@
 package com.example.geometricfigures
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -11,11 +13,11 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.isVisible
 import androidx.lifecycle.ViewModelProvider
+import kotlin.math.sqrt
 
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var mainViewModel: MainViewModel
     private lateinit var areaView: View
     private lateinit var imgvarea: ImageView
     private lateinit var tvtitlevarea: TextView
@@ -41,34 +43,36 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        mainViewModel = ViewModelProvider(this)[MainViewModel::class.java]
+
     }
     fun imageClicked(view: View) {
+        val intent = Intent(this, AreaActivity::class.java)
+
         when (view.id) {
             R.id.ivTriangle -> {
-                imgvarea.setImageResource(R.drawable.triangulo)
-                tvtitlevarea.text = getString(R.string.tvTitlevArea)
-                tvcalcular.text = getString(R.string.tvCalculateArea)
+                intent.putExtra("figura", "triangulo")
+                intent.putExtra("titulo", getString(R.string.tvTitlevArea))
+                intent.putExtra("calcular", getString(R.string.tvCalculateArea))
+                intent.putExtra("altura", getString(R.string.tvComponentHeight))
+                intent.putExtra("base", getString(R.string.tvheightpentagono))
             }
-
             R.id.ivPentagon -> {
-                imgvarea.setImageResource(R.drawable.pentagono)
-                tvtitlevarea.text = getString(R.string.tvTitlevpentagono)
-                tvcalcular.text = getString(R.string.tvCalculateAreaPentagono)
-                tvbase.text = getString(R.string.tvheightpentagono)
-                tvheight.visibility = View.INVISIBLE
-                etheight.visibility = View.INVISIBLE
-
+                intent.putExtra("figura", "pentagono")
+                intent.putExtra("titulo", getString(R.string.tvTitlevpentagono))
+                intent.putExtra("calcular", getString(R.string.tvCalculateAreaPentagono))
+                intent.putExtra("base", getString(R.string.tvheightpentagono))
+                intent.putExtra("alturaVisible", false)
             }
-
             R.id.ivOval -> {
-                imgvarea.setImageResource(R.drawable.ovalo)
-                tvtitlevarea.text = getString(R.string.tvTitlevovalo)
-                tvcalcular.text = getString(R.string.tvCalculateAreaOvalo)
-                tvheight.text = getString(R.string.tvheightovalo)
-                tvbase.text = getString(R.string.tvbaseOvalo)
+                intent.putExtra("figura", "ovalo")
+                intent.putExtra("titulo", getString(R.string.tvTitlevovalo))
+                intent.putExtra("calcular", getString(R.string.tvCalculateAreaOvalo))
+                intent.putExtra("altura", getString(R.string.tvheightovalo))
+                intent.putExtra("base", getString(R.string.tvbaseOvalo))
             }
         }
-        setContentView(areaView)
+
+        startActivity(intent)
     }
+
 }
