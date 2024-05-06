@@ -8,6 +8,8 @@
     <string name="tvPentagon">Pentagono</string>
     <string name="tvOval">Ovalo</string>
     <string name="tvTitlevArea">¿Cómo calcular el área del triángulo?</string>
+    <string name="tvTitlevpentagono">¿Cómo calcular el área del pentagono?</string>
+    <string name="tvTitlevovalo">¿Cómo calcular el área del ovalo?</string>
     <string name="imgvArea" translatable="false"></string>
     <string name="tvCalculateArea">Calcular el area del triangulo: b=base * h=altura</string>
     <string name="tvComponentBase">Introduce la Base</string>
@@ -16,12 +18,9 @@
     <string name="ptHeightUser" translatable="false"></string>
     <string name="ptBaseUserHint" translatable="false">Base</string>
     <string name="ptHeightUserHint" translatable="false">Altura</string>
-    <string name="stringtrian">¿Cómo calcular el área del triángulo?</string>
-    <string name="stringtrian">¿Cómo calcular el área del triángulo?</string>
-    <string name="stringtrian">¿Cómo calcular el área del triángulo?</string>
-    <string name="stringtrian">¿Cómo calcular el área del triángulo?</string>
-    <string name="stringtrian">¿Cómo calcular el área del triángulo?</string>
-    <string name="stringtrian">¿Cómo calcular el área del triángulo?</string>
-    <string name="stringtrian">¿Cómo calcular el área del triángulo?</string>
-    <string name="stringtrian">¿Cómo calcular el área del triángulo?</string>
+    <string name="tvCalculateAreaPentagono">Calcular el area del pentagono: 1/4 * √5 * (5+2*√5) x lado^2 </string>
+    <string name="tvCalculateAreaOvalo">Calcular el area del ovalo: π * a * b</string>
+    <string name="tvheightpentagono">Introduce el tamaño del lado</string>
+    <string name="tvheightovalo">Introduce el tamaño de la diagonal mayor</string>
+    <string name="tvbaseOvalo">Introduce el tamaño de la diagonal menor</string>
 </resources>

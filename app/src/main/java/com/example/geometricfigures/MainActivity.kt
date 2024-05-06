@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var tvcalcular: TextView
     private lateinit var tvheight: TextView
     private lateinit var tvbase: TextView
+    private lateinit var etheight: TextView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -33,6 +34,7 @@ class MainActivity : AppCompatActivity() {
         tvcalcular = areaView.findViewById(R.id.tvCalcular)
         tvheight = areaView.findViewById(R.id.tvHeigth)
         tvbase = areaView.findViewById(R.id.tvBase)
+        etheight = areaView.findViewById(R.id.etHeight)
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
@@ -45,25 +47,26 @@ class MainActivity : AppCompatActivity() {
         when (view.id) {
             R.id.ivTriangle -> {
                 imgvarea.setImageResource(R.drawable.triangulo)
-                tvtitlevarea.text = "¿Cómo calcular el área del triángulo?"
-                tvcalcular.text = "Calcular el area del triangulo: b=base * h=altura"
+                tvtitlevarea.text = getString(R.string.tvTitlevArea)
+                tvcalcular.text = getString(R.string.tvCalculateArea)
             }
 
             R.id.ivPentagon -> {
                 imgvarea.setImageResource(R.drawable.pentagono)
-                tvtitlevarea.text = "¿Cómo calcular el área del pentagono?"
-                tvcalcular.text = "Calcular el area del pentagono: 1/4 * √5 * (5+2*√5) x lado^2 "
-                tvheight.text = "Introduce el tamaño del lado"
-                tvbase.visibility = View.INVISIBLE
+                tvtitlevarea.text = getString(R.string.tvTitlevpentagono)
+                tvcalcular.text = getString(R.string.tvCalculateAreaPentagono)
+                tvbase.text = getString(R.string.tvheightpentagono)
+                tvheight.visibility = View.INVISIBLE
+                etheight.visibility = View.INVISIBLE
 
             }
 
             R.id.ivOval -> {
                 imgvarea.setImageResource(R.drawable.ovalo)
-                tvtitlevarea.text = "¿Cómo calcular el área del ovalo?"
-                tvcalcular.text = "Calcular el area del ovalo: π * a * b"
-                tvheight.text = "Introduce el tamaño de la diagonal mayor"
-                tvheight.text = "Introduce el tamaño de la diagonal menor"
+                tvtitlevarea.text = getString(R.string.tvTitlevovalo)
+                tvcalcular.text = getString(R.string.tvCalculateAreaOvalo)
+                tvheight.text = getString(R.string.tvheightovalo)
+                tvbase.text = getString(R.string.tvbaseOvalo)
             }
         }
         setContentView(areaView)

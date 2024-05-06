@@ -9,4 +9,11 @@
     <string name="tvComponentBase">" Enter the Base"</string>
     <string name="tvComponentHeight">Enter the Height</string>
     <string name="tvTitlevArea">How to calculate the area of ​​the triangle?</string>
+    <string name="tvCalculateAreaPentagono">To calculate the area of ​​the pentagon : 1/4 * √5 * (5+2*√5) x lado^2  √=Raiz</string>
+    <string name="tvCalculateAreaOvalo">To calculate the area of ​​the triangle you just have to multiply pi , long diagonal and short diagonal</string>
+    <string name="tvheightpentagono">"Enter de side "</string>
+    <string name="tvheightovalo">Enter the big hyphen</string>
+    <string name="tvbaseOvalo">Enter de short hyphen</string>
+    <string name="tvTitlevpentagono">How to calculate the area of ​​the pentagon?</string>
+    <string name="tvTitlevovalo">How to calculate the area of ​​the oval?</string>
 </resources>
