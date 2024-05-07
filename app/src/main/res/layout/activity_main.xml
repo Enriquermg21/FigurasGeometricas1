@@ -5,15 +5,103 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFFFFF"
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/tvPentagon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/tvPentagon"
+        android:text="@string/tvPentagon"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivPentagon" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="@string/tvTitlevMain"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.609"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ImageView
+        android:id="@+id/ivTriangle"
+        android:layout_width="147dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="36dp"
+        android:background="#FFFFFF"
+        android:tag="triangulo"
+        android:contentDescription="@string/imgTriangle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+        app:srcCompat="@drawable/triangulo"
+        android:clickable="true"
+        android:onClick="imageClicked"
+        android:focusable="true" />
+
+    <ImageView
+        android:id="@+id/ivOval"
+        android:layout_width="112dp"
+        android:layout_height="108dp"
+        android:layout_marginTop="36dp"
+        android:tag="ovalo"
+        android:contentDescription="@string/imgOval"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPentagon"
+        app:srcCompat="@drawable/ovalo"
+        android:clickable="true"
+        android:onClick="imageClicked"
+        android:focusable="true" />
+
+    <ImageView
+        android:id="@+id/ivPentagon"
+        android:layout_width="145dp"
+        android:layout_height="113dp"
+        android:layout_marginTop="28dp"
+        android:background="#FFFFFF"
+        android:tag="pentagono"
+        android:contentDescription="@string/imgPentagon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTriangle"
+        app:srcCompat="@drawable/pentagono"
+        android:clickable="true"
+        android:onClick="imageClicked"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/tvOval"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/tvOval"
+        android:text="@string/tvOval"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivOval"
+        app:layout_constraintVertical_bias="0.203" />
+
+    <TextView
+        android:id="@+id/tvTriangle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/tvTriangle"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivTriangle" />
 </androidx.constraintlayout.widget.ConstraintLayout>
