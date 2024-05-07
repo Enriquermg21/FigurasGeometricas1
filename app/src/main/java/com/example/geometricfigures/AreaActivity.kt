@@ -34,8 +34,6 @@ class AreaActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
-        // Inicializa las vistas primero
         tvheight = findViewById(R.id.tvHeigth)
         tvtitlearea = findViewById(R.id.tvTitleArea)
         tvcalcular = findViewById(R.id.tvCalcular)
@@ -46,14 +44,12 @@ class AreaActivity : AppCompatActivity() {
         imagenview = findViewById(R.id.imgvArea)
         btnCalcular = findViewById(R.id.btnCalcular)
 
-        // Luego obtén los datos del Intent
         val figura = intent.getStringExtra("figura")
         val titulo = intent.getStringExtra("titulo")
         val calcular = intent.getStringExtra("calcular")
         val base = intent.getStringExtra("base")
         val altura = intent.getStringExtra("altura")
 
-        // Configura las vistas con los datos del Intent
         imagenview.setImageResource(getDrawableResource(figura))
         tvtitlearea.text = titulo
         tvcalcular.text = calcular
@@ -84,7 +80,6 @@ class AreaActivity : AppCompatActivity() {
     }
 
     private fun calcularArea() {
-        Log.d("AreaActivity", "Calculando área...")
 
         val tipoForma = when (imagenview.drawable.constantState) {
             resources.getDrawable(R.drawable.pentagono, null).constantState -> "pentagono"
@@ -95,27 +90,26 @@ class AreaActivity : AppCompatActivity() {
 
         val resultado = when (tipoForma) {
             "triangulo" -> {
-                val base = heightuser.text.toString().toDoubleOrNull() ?: 0.0
-                val altura = etheight.text.toString().toDoubleOrNull() ?: 0.0
-                (base * altura) / 2
+                val base = heightuser
+                val altura = etheight
+                val triangulo = Triangulo(base, altura)
+                triangulo.calcularArea()
             }
 
             "pentagono" -> {
-                val lado = heightuser.text.toString().toDoubleOrNull() ?: 0.0
-                0.25 * Math.sqrt(5.0 * (5 + 2 * Math.sqrt(5.0))) * lado * lado
+                val lado = heightuser
+                val pentagono = Pentagono(lado)
+                pentagono.calcularArea()
             }
-
             "ovalo" -> {
-                val semiEjeMayor = heightuser.text.toString().toDoubleOrNull() ?: 0.0
-                val semiEjeMenor = etheight.text.toString().toDoubleOrNull() ?: 0.0
-                Math.PI * semiEjeMayor * semiEjeMenor
+                val semiEjeMayor = heightuser
+                val semiEjeMenor = etheight
+                val ovalo = Ovalo(semiEjeMayor, semiEjeMenor)
+                ovalo.calcularArea()
             }
 
             else -> 0.0
         }
-
-        Log.d("AreaActivity", "Área calculada: $resultado")
-
-        resultadoAreaTextView.text = "Área: $resultado"
+        resultadoAreaTextView.text = "Area: $resultado"
     }
 }

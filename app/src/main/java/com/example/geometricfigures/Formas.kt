@@ -1,11 +1,10 @@
 package com.example.geometricfigures
 
 import android.widget.EditText
-import android.widget.TextView
-import kotlin.math.pow
+import kotlin.math.sqrt
 
 abstract class FormaGeometrica {
-    // Método abstracto para calcular el área
+
     abstract fun calcularArea(): Double
 }
 
@@ -20,7 +19,7 @@ class Triangulo(private val base: EditText, private val altura: EditText) : Form
 class Pentagono(private val lado: EditText) : FormaGeometrica() {
     override fun calcularArea(): Double {
         val ladoDouble = lado.text.toString().toDoubleOrNull() ?: 0.0
-        return 0.25 * Math.sqrt(5.0 * (5 + 2 * Math.sqrt(5.0))) * ladoDouble * ladoDouble
+        return 0.25 * sqrt(5.0 * (5 + 2 * sqrt(5.0))) * ladoDouble * ladoDouble
     }
 }
 
